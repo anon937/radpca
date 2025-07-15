@@ -1,0 +1,39 @@
+artifact_path: RF_Thesis_v2_victorious-midge-266
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 2.15.1
+model_size_bytes: 434856
+model_uuid: 631925d1b1194228933ce5101042b9a3
+run_id: d9dd94a2204c4a7885c4112bdc1f9ba6
+signature:
+  inputs: '[{"type": "double", "name": "ADC_log-sigma-3-0-mm-3D_glcm_Autocorrelation",
+    "required": true}, {"type": "double", "name": "ADC_wavelet-LLH_firstorder_10Percentile",
+    "required": true}, {"type": "double", "name": "ADC_original_firstorder_10Percentile",
+    "required": true}, {"type": "double", "name": "T2_log-sigma-4-0-mm-3D_firstorder_Minimum",
+    "required": true}, {"type": "double", "name": "ADC_wavelet-LHL_glcm_Correlation",
+    "required": true}, {"type": "double", "name": "ADC_original_shape_Maximum2DDiameterColumn",
+    "required": true}, {"type": "double", "name": "ADC_log-sigma-3-0-mm-3D_glcm_ClusterProminence",
+    "required": true}, {"type": "double", "name": "T2_log-sigma-3-0-mm-3D_gldm_DependenceVariance",
+    "required": true}, {"type": "double", "name": "T2_wavelet-LHL_glszm_LargeAreaLowGrayLevelEmphasis",
+    "required": true}, {"type": "double", "name": "ADC_wavelet-LLH_firstorder_Maximum",
+    "required": true}, {"type": "double", "name": "ADC_original_shape_LeastAxisLength",
+    "required": true}, {"type": "double", "name": "T2_log-sigma-2-0-mm-3D_glcm_ClusterShade",
+    "required": true}, {"type": "double", "name": "ADC_log-sigma-5-0-mm-3D_glrlm_LongRunLowGrayLevelEmphasis",
+    "required": true}, {"type": "double", "name": "ADC_wavelet-LHL_firstorder_Minimum",
+    "required": true}, {"type": "double", "name": "T2_wavelet-LHH_glrlm_RunVariance",
+    "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+utc_time_created: '2025-02-13 14:52:30.716112'
